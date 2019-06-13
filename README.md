@@ -1,37 +1,60 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# The Plain
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+> The Plain is a minimalist Jekyll theme, ideally designed for your personal blog use. This Jekyll theme provides a minimum distraction so you can focus on writing that matters to you and your readers. This theme is originally inspired from [Leonard Lamprecht's _leo_ theme](https://github.com/leo/leo.github.io).
 
-## Demo
+[![LICENSE](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE) ![GENERATOR](https://img.shields.io/badge/made_with-jekyll-blue.svg) ![VERSION](https://img.shields.io/badge/current_version-4.0-green.svg) ![TRAVIS-CI](https://travis-ci.org/heiswayi/the-plain.svg?branch=master)
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+- **Demo:** https://heiswayi.github.io/the-plain/
 
-The main page would look like this:
+![SCREENSHOT](https://i.imgur.com/FITKN1H.png)
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+## Usage
 
-The post page would look like this:
+### On an unlimited Jekyll host
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+> **NOTE** This does NOT work on GitHub, see the next section.
 
-## Features
+Put this in your *Gemfile*:
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+	gem 'the-plain'
 
-## Installation:
+and run `bundle install` to install the plugin.
 
-Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
+Add this to your sites *_config.yml* file:
+
+	theme: the-plain
+
+Then copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+
+### On GitHub
+
+GitHub - for your user account pages or repository gh-pages - only supports a limited set of themes.
+
+Therefore, you need to use the 'remote\_theme:' setting instead of 'theme:', which is supported by [a 3rd party plugin](https://github.com/benbalter/jekyll-remote-theme).
+
+Put this in your *Gemfile*:
+
+	gem 'jekyll-remote-theme'
+
+and run `bundle install` to install the plugin.
+
+Add the following to your site's *_config.yml* to activate the plugin and to select this theme:
+
+	plugins:
+	  - jekyll-remote-theme
+
+	remote_theme: heiswayi/the-plain
+
+This will grab the theme directly from the GitHub repo.
+
+Now copy some of the settings from this repo's *_config.yml* file to your own, and modify them.
+
+## Authors
+
+- [**Heiswayi Nrird**](https://heiswayi.nrird.com)
+
+See also the list of [contributors](https://github.com/heiswayi/the-plain/graphs/contributors) who participated in this project.
 
 ## License
 
-GNU General Public License v3.0
-
-## Donate
-
-<p>If you want to show your appreciation, buy me one <a href="https://www.buymeacoffee.com/artemsheludko" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a> ! Every five cups of coffee and a new theme for Jekyll is ready 😋</p>
-<p>Either way, your support is a way to thank me ❤️</p>
-<p align="center"><b>Thank you for your support!</b></p>
+[MIT](LICENSE)
